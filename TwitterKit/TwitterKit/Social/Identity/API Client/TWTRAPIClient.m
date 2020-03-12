@@ -43,7 +43,7 @@
 #import "TWTRTimelineParser.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetRepository.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet.h"
 #import "TWTRTwitterAPIConfiguration.h"
 #import "TWTRTwitterAPIServiceConfig.h"
 #import "TWTRTwitter_Private.h"

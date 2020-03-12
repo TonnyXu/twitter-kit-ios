@@ -25,7 +25,7 @@
 #import "TWTRTweetView.h"
 #import "TWTRTweetViewSizeCalculator.h"
 #import "TWTRTweetView_Private.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet.h"
 #import "TWTRViewUtil.h"
 
 @implementation TWTRTweetTableViewCell

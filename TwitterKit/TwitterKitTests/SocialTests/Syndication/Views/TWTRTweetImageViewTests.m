@@ -27,7 +27,7 @@
 #import "TWTRTweetMediaEntity.h"
 #import "TWTRTweetMediaView.h"
 #import "TWTRTweetPresenter.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet.h"
 #import "TWTRViewUtil.h"
 
 @interface TWTRTweetImageViewTests : XCTestCase

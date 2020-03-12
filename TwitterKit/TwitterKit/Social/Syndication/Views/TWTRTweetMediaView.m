@@ -30,7 +30,7 @@
 #import "TWTRTweet.h"
 #import "TWTRTweetImageView.h"
 #import "TWTRTweetMediaEntity.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet.h"
 #import "TWTRTwitter_Private.h"
 #import "TWTRVideoControlsView.h"
 #import "TWTRVideoMetaData.h"

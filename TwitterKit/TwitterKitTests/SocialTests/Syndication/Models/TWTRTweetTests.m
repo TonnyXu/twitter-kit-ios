@@ -23,7 +23,7 @@
 #import "TWTRTestCase.h"
 #import "TWTRTweetMediaEntity.h"
 #import "TWTRTweetRepository.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet.h"
 #import "TWTRUser.h"
 #import "TWTRVideoMetaData.h"
 

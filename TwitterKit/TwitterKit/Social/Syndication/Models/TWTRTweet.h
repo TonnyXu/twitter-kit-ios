@@ -17,6 +17,7 @@
 
 #import <Foundation/Foundation.h>
 #import <TwitterKit/TWTRJSONConvertible.h>
+#import "TWTRVersionedCacheable.h"
 
 @class TWTRTweet;
 @class TWTRUser;
@@ -160,6 +161,63 @@ NS_ASSUME_NONNULL_BEGIN
  *  Tweet objects should be hyrdrated from a valid JSON object. See TWTRJSONConvertible for more information.
  */
 - (instancetype)init NS_UNAVAILABLE;
+
+@end
+
+@class TWTRCardEntity;
+@class TWTRTweetMediaEntity;
+@class TWTRVideoMetaData;
+@class TWTRTweetRepository;
+
+
+FOUNDATION_EXTERN NSString *const TWTRCompactTweetExpandedURLString;
+FOUNDATION_EXTERN NSString *const TWTRTweetPerspectivalUserID;
+
+@interface TWTRTweet () <TWTRVersionedCacheable>
+
+@property (nonatomic, readonly) TWTRTweetRepository *tweetRepo;
+
+#pragma mark - Private Properties
+
+@property (nonatomic, copy, readonly, nullable) NSArray *hashtags;
+@property (nonatomic, copy, readonly, nullable) NSArray *cashtags;
+@property (nonatomic, copy, readonly, nullable) NSArray<TWTRTweetMediaEntity *> *media;
+@property (nonatomic, copy, readonly, nullable) NSArray *urls;
+@property (nonatomic, copy, readonly, nullable) NSArray *userMentions;
+
+@property (nonatomic, readonly, nullable) TWTRCardEntity *cardEntity;
+
+@property (nonatomic, readonly, nullable) TWTRVideoMetaData *videoMetaData;
+
+#pragma mark - Getters and Setters
+
+/**
+ * Returns true if the Tweet has media entities.
+ */
+- (BOOL)hasMedia;
+
+/**
+ * Returns true if the Tweet has a media entity which has associated video or
+ * the card entity contains playable media.
+ */
+- (BOOL)hasPlayableVideo;
+
+/**
+ *  Returns true if the Tweet has a card entity attached
+ *  which is a Vine card.
+ */
+- (BOOL)hasVineCard;
+
+/**
+ *  Returns a new Tweet with the perspectival user ID set. This data is only available when fetching
+ *  Tweets with `TWTRAPIClient` since the REST API does not include the authenticated user making
+ *  the request.
+ *
+ *  @param userID ID of the Twitter user who fetched this Tweet. Nil means logged-out user.
+ *
+ *  @return Copy of the Tweet with the `perspectivalUserID` set to the given ID.
+ */
+- (TWTRTweet *)tweetWithPerspectivalUserID:(nullable NSString *)userID;
 
 @end
 

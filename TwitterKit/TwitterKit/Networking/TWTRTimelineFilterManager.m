@@ -26,7 +26,7 @@
 #import "TWTRTweetHashtagEntity.h"
 #import "TWTRTweetUrlEntity.h"
 #import "TWTRTweetUserMentionEntity.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet.h"
 #import "TWTRTwitter_Private.h"
 #import "TWTRUser.h"
 

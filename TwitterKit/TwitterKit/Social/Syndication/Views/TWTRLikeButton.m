@@ -31,7 +31,7 @@
 #import "TWTRTranslationsUtil.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetRepository.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet.h"
 #import "TWTRTwitter.h"
 #import "TWTRTwitter_Private.h"
 #import "TWTRViewUtil.h"

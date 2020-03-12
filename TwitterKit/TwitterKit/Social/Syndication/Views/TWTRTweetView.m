@@ -44,7 +44,7 @@
 #import "TWTRTweetUrlEntity.h"
 #import "TWTRTweetViewMetrics.h"
 #import "TWTRTweetView_Private.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet.h"
 #import "TWTRTwitter_Private.h"
 #import "TWTRUser.h"
 #import "TWTRVideoMetaData.h"
