@@ -17,7 +17,7 @@
 
 #import <Foundation/Foundation.h>
 #import <TwitterKit/TWTRJSONConvertible.h>
-#import "TWTRVersionedCacheable.h"
+#import <TwitterKit/TWTRVersionedCacheable.h>
 
 @class TWTRTweet;
 @class TWTRUser;

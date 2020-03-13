@@ -667,6 +667,7 @@
 		DBFA3B2B1B8CEAE000FEE19D /* TWTRWebAuthenticationFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFA3B291B8CEAE000FEE19D /* TWTRWebAuthenticationFlow.m */; };
 		DBFE5B341D1471B100C77F64 /* TWTRFixtureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BD703197F75FE00C9C0F4 /* TWTRFixtureLoader.m */; };
 		DBFE5B351D14A57800C77F64 /* ExtendedTweet.json in Resources */ = {isa = PBXBuildFile; fileRef = DBFE5B2F1D146D0700C77F64 /* ExtendedTweet.json */; };
+		E1EAADB7241BD81E007D905C /* TWTRVersionedCacheable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D2B41181AC3848F00AE5E4A /* TWTRVersionedCacheable.h */; };
 		F5154B8519D4E6220054DECF /* TWTRComposer.h in Headers */ = {isa = PBXBuildFile; fileRef = F5154B8119D4E6130054DECF /* TWTRComposer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5154B8619D4E6220054DECF /* TWTRComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = F5154B8219D4E6130054DECF /* TWTRComposer.m */; };
 /* End PBXBuildFile section */
@@ -2847,6 +2848,7 @@
 				DB610F2C1CAC6A1C006F93E0 /* TWTRTweetEntity.h in Headers */,
 				BF318F081AE03BC50082353A /* TWTRUser.h in Headers */,
 				DB62285F1C221F9B001E1997 /* TWTRTweetImageViewPill.h in Headers */,
+				E1EAADB7241BD81E007D905C /* TWTRVersionedCacheable.h in Headers */,
 				BFE839A31ADF28AC0035CBA1 /* TWTRSystemAccountSerializer.h in Headers */,
 				DB52BC671B98ED22001715A4 /* TWTRTwitterText.h in Headers */,
 				BFE8398D1ADF28600035CBA1 /* TWTRCollectionTimelineDataSource.h in Headers */,
