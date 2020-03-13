@@ -17,7 +17,22 @@
 
 #import <Foundation/Foundation.h>
 #import <TwitterKit/TWTRJSONConvertible.h>
-#import <TwitterKit/TWTRVersionedCacheable.h>
+
+@protocol TWTRVersionedCacheable <NSObject, NSCoding>
+
+/**
+ *  Returns the versioned key for instances of the class to read and write this cacheable object into the cache store.
+ *  This depends on +[Class<NSObject> version]. Version (default = 0) should be bumped every time we
+ *  support a new or update an existing property of the concrete class.
+ *
+ *  @param IDString     (Required) ID of the instance of the cacheable class
+ *  @param perspective  This is typically the currently authenticated user
+ *                      but could be any key that differentiates views of the
+ *                      data. `nil` means there's only one view.
+ */
++ (NSString *_Nonnull)versionedCacheKeyWithID:(NSString *_Nonnull)IDString perspective:(NSString *_Nonnull)perspective __attribute__((nonnull(1)));
+
+@end
 
 @class TWTRTweet;
 @class TWTRUser;

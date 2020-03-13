@@ -19,18 +19,3 @@
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
 
-@protocol TWTRVersionedCacheable <NSObject, NSCoding>
-
-/**
- *  Returns the versioned key for instances of the class to read and write this cacheable object into the cache store.
- *  This depends on +[Class<NSObject> version]. Version (default = 0) should be bumped every time we
- *  support a new or update an existing property of the concrete class.
- *
- *  @param IDString     (Required) ID of the instance of the cacheable class
- *  @param perspective  This is typically the currently authenticated user
- *                      but could be any key that differentiates views of the
- *                      data. `nil` means there's only one view.
- */
-+ (NSString *)versionedCacheKeyWithID:(NSString *)IDString perspective:(NSString *)perspective __attribute__((nonnull(1)));
-
-@end

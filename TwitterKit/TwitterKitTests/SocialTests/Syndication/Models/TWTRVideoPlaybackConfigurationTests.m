@@ -20,7 +20,6 @@
 #import "TWTRFixtureLoader.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetMediaEntity.h"
-#import "TWTRTweet.h"
 #import "TWTRVideoDeeplinkConfiguration.h"
 #import "TWTRVideoPlaybackConfiguration.h"
 

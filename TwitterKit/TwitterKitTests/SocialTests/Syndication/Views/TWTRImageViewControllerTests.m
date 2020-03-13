@@ -23,7 +23,6 @@
 #import "TWTRImageViewController.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetMediaEntity.h"
-#import "TWTRTweet.h"
 #import "TWTRTwitter_Private.h"
 
 @interface TWTRImageViewController ()

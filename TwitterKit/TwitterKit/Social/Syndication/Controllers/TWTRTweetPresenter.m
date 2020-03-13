@@ -30,7 +30,6 @@
 #import "TWTRTweetMediaEntity.h"
 #import "TWTRTweetUrlEntity.h"
 #import "TWTRTweetUserMentionEntity.h"
-#import "TWTRTweet.h"
 #import "TWTRUser.h"
 #import "TWTRViewUtil.h"
 

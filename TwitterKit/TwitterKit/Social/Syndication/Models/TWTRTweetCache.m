@@ -19,8 +19,6 @@
 
 #import "TWTRPersistentStore.h"
 #import "TWTRTweet.h"
-#import "TWTRTweet.h"
-#import "TWTRVersionedCacheable.h"
 
 @implementation TWTRTweetCache
 

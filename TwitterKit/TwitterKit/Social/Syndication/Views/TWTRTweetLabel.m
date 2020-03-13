@@ -21,7 +21,6 @@
 #import "TWTRStringUtil.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetUrlEntity.h"
-#import "TWTRTweet.h"
 #import "TWTRViewUtil.h"
 
 @interface TWTRTweetLabel ()
